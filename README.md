@@ -10,7 +10,7 @@ If the trip is within a week, you will get the current weather forecast.
 `cd` into your new folder and run:
 - `npm install`
 
-#My App Screen Shots
+# My App Screen Shots
 ![Home Page](https://github.com/AmalAhmedibrahim/TravelAPP/blob/master/src/images/res1.png)
 ![Home Page](https://github.com/AmalAhmedibrahim/TravelAPP/blob/master/src/images/res2.png)
 ![Home Page](https://github.com/AmalAhmedibrahim/TravelAPP/blob/master/src/images/res3.png)
