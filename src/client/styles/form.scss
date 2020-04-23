@@ -1,0 +1,41 @@
+.form-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 28em;
+    background-color: #fb8c00;
+    border-radius: 20%;
+    opacity: 0.7;
+    margin-right: 2em;
+    .form-input {
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        font-size: 1.2em;
+        color: #37474f;
+        border-radius: 0.5em;
+        margin: 0.3em;
+        line-height: 1.5;
+        padding: 0.5em 0.5em;
+        width: 80%;
+        font-family: "Baloo Tammudu 2", cursive;
+    }
+    .title {
+        height: 2em;
+        font-family: "Over the Rainbow", cursive;
+        font-size: 3em;
+    }
+    .submit-button {
+        &:hover {
+            background-color: #212121;
+            color: #efebe9;
+            font-weight: 500;
+        }
+    }
+}

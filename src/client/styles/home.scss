@@ -1,0 +1,23 @@
+.cover {
+    background: linear-gradient(rgba(255, 236, 179, 0.144), rgba(187, 186, 130, 0.5)),
+        url("/src/images/bg3.jpg") no-repeat center;
+
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+        color: #efebe9;
+        font-family: "Over the Rainbow", cursive;
+        font-size: 5em;
+        &:hover {
+            color: #212121;
+        }
+    }
+    .description {
+        font-size: 2em;
+        color: #bdbdbd;
+    }
+}

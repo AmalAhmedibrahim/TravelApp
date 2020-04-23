@@ -1,0 +1,45 @@
+.header-container {
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Baloo Tammudu 2", cursive;
+    color: #efebe9;
+    .logo-Container {
+        width: 6em;
+        height: 6em;
+        .logo {
+            width: 100%;
+        }
+    }
+    .nav-container {
+        .nav-bar {
+            display: flex;
+            .nav-item {
+                padding: 1em;
+                margin: 1em;
+                // border: 0.1px solid;
+                a {
+                    color: #efebe9;
+                    font-size: 1.5em;
+                    &:hover {
+                        color: #212121;
+                    }
+                }
+            }
+        }
+    }
+    .start-trip {
+        margin-right: 2em;
+        border: 1px solid;
+        padding: 0.5em;
+        line-height: 1.5;
+        &:hover {
+            color: #212121;
+            background-color: #efebe9;
+        }
+    }
+}
