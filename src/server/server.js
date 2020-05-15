@@ -16,8 +16,8 @@ app.use(cors());
 dotenv.config();
 
 app.get('/', (req, res) => {
-    // res.sendFile('dist/index.html')
-    res.status(200).sendFile(path.resolve('src/client/views/index.html'))
+     res.sendFile('dist/index.html')
+   // res.status(200).sendFile(path.resolve('src/client/views/index.html'))
 });
 
 
