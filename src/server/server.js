@@ -34,7 +34,7 @@ app.post('/add', (req, res) => {
 });
 
 
-app.listen(8081, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Example app listening on port 8081!')
 });
 
