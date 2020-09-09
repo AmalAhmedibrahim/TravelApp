@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css2?family=Over + the + Rainbow&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Baloo + Tammudu + 2:wght@400;500;600&display=swap);
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.footer-container {
+    background-color: #6d4c41;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 28em;
+    background-color: #fb8c00;
+    border-radius: 20%;
+    opacity: 0.7;
+    margin-right: 2em;
+}
+.my-form .form-input {
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #37474f;
+    border-radius: 0.5em;
+    margin: 0.3em;
+    line-height: 1.5;
+    padding: 0.5em 0.5em;
+    width: 80%;
+    font-family: "Baloo Tammudu 2", cursive;
+}
+.my-form .title {
+    height: 2em;
+    font-family: "Over the Rainbow", cursive;
+    font-size: 3em;
+}
+.my-form .submit-button:hover {
+    background-color: #212121;
+    color: #efebe9;
+    font-weight: 500;
+}
+
+.header-container {
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Baloo Tammudu 2", cursive;
+    color: #efebe9;
+}
+.header-container .logo-Container {
+    width: 6em;
+    height: 6em;
+}
+.header-container .logo-Container .logo {
+    width: 100%;
+}
+.header-container .nav-container .nav-bar {
+    display: flex;
+}
+.header-container .nav-container .nav-bar .nav-item {
+    padding: 1em;
+    margin: 1em;
+}
+.header-container .nav-container .nav-bar .nav-item a {
+    color: #efebe9;
+    font-size: 1.5em;
+}
+.header-container .nav-container .nav-bar .nav-item a:hover {
+    color: #212121;
+}
+.header-container .start-trip {
+    margin-right: 2em;
+    border: 1px solid;
+    padding: 0.5em;
+    line-height: 1.5;
+}
+.header-container .start-trip:hover {
+    color: #212121;
+    background-color: #efebe9;
+}
+
+.result-container {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    height: 20em;
+    background-color: #bdbdbd;
+}
+.result-container .data-container .title {
+    font-family: "Baloo Tammudu 2", cursive;
+    font-size: 1.3em;
+}
+.result-container .data-container .title .data {
+    color: #5d4037;
+}
+.result-container .img-container {
+    width: 20em;
+}
+.result-container .img-container .res-image {
+    width: 100%;
+}
+
+.cover {
+    background: linear-gradient(rgba(255, 236, 179, 0.144), rgba(187, 186, 130, 0.5)),
+        url("./images/bg3.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cover .title {
+    color: #efebe9;
+    font-family: "Over the Rainbow", cursive;
+    font-size: 5em;
+}
+.cover .title:hover {
+    color: #212121;
+}
+.cover .description {
+    font-size: 2em;
+    color: #bdbdbd;
+}

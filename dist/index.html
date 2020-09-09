@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel APP</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="header-container">
+                <div class="logo-Container">
+                    <img class="logo" src="./images/logo.png" alt="logo">
+                </div>
+                <nav class="nav-container">
+                    <ul class="nav-bar">
+                        <li class="nav-item"><a href="Blog.html">Home</a></li>
+                        <li class="nav-item"><a href="Blog.html">About</a></li>
+                        <li class="nav-item"><a href="Blog.html">Destinations</a></li>
+                        <li class="nav-item"><a href="Blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="start-trip">
+                    <!-- <li class="nav-item"><a href="">Start Your Trip</a></li> -->
+                    <a>Start Your Trip</a>
+                </div>
+            </header>
+
+            <section>
+                <div class="cover">
+                    <div class="title">Time To Take A Vacation </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="form-container">
+                    <form class="my-form" onsubmit="return submitTrip(event)">
+                        <div class="title">Plan Your Vacation</div>
+                        <input id="city" class="form-input" type="text" name="city-input" value=""
+                            placeholder="Traveling To">
+                        <input id="departing-date" class="form-input" type="text" name="input"
+                            placeholder="Departing Date" onfocus="(this.type='date')">
+
+                        <input id="end-date" class="form-input" type="text" name="input" placeholder="End Date"
+                            onfocus="(this.type='date')">
+
+                        <input type="button" id="submit" class="form-input submit-button" name="" value="submit"
+                            required>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div id="result-container" class="result-container">
+                    <div class="data-container">
+                        <div class="title">Weather : <span class="data" id="weather-data"></span></div>
+                        <div class="title">Country : <span class="data" id="country-data"></span></div>
+                        <div class="title">City : <span class="data" id="city-data"></span></div>
+                        <div class="title">trip Length : <span class="data" id="trip-Length-data"></span></div>
+
+                    </div>
+                    <div class="img-container">
+                        <img class="res-image" id="res-image" src="" />
+                    </div>
+                </div>
+            </section>
+            <!-- <footer>
+                <div class="footer-container">
+
+                    <p>Copyright &copy; Amal Ahmed. All Rights Reserved.</p>
+                </div> -->
+            <!-- <div class="social-media-container">
+                    <a href="mailto:amal.ahmed.ibrahim@hotmail.com"><i class="fa fa-envelope-o"
+                            aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/amal_ahmed_96" target="_blank"><i class="fa fa-twitter"
+                            aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                    <a href="https://www.linkedin.com/in/amal-ahmed-785933107/" target="_blank"><i
+                            class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/amal.ahmed.ibrahim" target="_blank"><i
+                            class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div> -->
+            <!-- </footer> -->
+    </main>
+
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
